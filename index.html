@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Stack Blog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Full Stack Blog</h1>
+
+<div class="auth-box">
+<h2>Login / Register</h2>
+
+<input type="text" id="username" placeholder="Username">
+<input type="email" id="email" placeholder="Email">
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="registerUser()">Register</button>
+<button onclick="loginUser()">Login</button>
+
+<p id="message"></p>
+</div>
+
+<div id="blogSection" style="display:none;">
+
+<h2>Create Blog Post</h2>
+
+<input type="text" id="title" placeholder="Blog Title">
+
+<textarea id="content" placeholder="Write your blog here..."></textarea>
+
+<button onclick="addPost()">Publish Post</button>
+
+<h2>All Posts</h2>
+
+<div id="posts"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
