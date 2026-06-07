@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TaskMaster Dashboard</title>
+    <link rel="stylesheet" href="projectflow-style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Task Collaboration Tool</h1>
+
+    <div class="form-box">
+
+        <input type="text" id="taskName"
+        placeholder="Task Name">
+
+        <input type="text" id="assignedTo"
+        placeholder="Assigned To">
+
+        <textarea id="description"
+        placeholder="Task Description"></textarea>
+
+        <select id="status">
+            <option>Pending</option>
+            <option>In Progress</option>
+            <option>Completed</option>
+        </select>
+
+        <button onclick="addTask()">
+            Add Task
+        </button>
+
+    </div>
+
+    <div id="taskContainer"></div>
+
+</div>
+
+<script src="projectflow-script.js"></script>
+
+</body>
+</html>
